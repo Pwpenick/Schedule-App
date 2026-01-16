@@ -7,7 +7,7 @@ import re
 
 app = Flask(__name__)
 
-OBITS_URL = "https://www.shannonfuneralhome.com/obits"
+OBITS_URL = "https://www.shannonfuneralhome.com/obituaries/obituary-listings?page=1"
 
 @app.route('/favicon.ico')
 def favicon():
