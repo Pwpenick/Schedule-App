@@ -9,6 +9,10 @@ app = Flask(__name__)
 
 OBITS_URL = "https://www.shannonfuneralhome.com/obits"
 
+@app.route('/favicon.ico')
+def favicon():
+    return '', 204
+
 @app.route("/api/obits")
 def get_obits():
     try:
