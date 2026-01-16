@@ -13,6 +13,11 @@ OBITS_URL = "https://www.shannonfuneralhome.com/obits"
 def favicon():
     return '', 204
 
+@app.route("/")
+def home():
+    return "<h1>Obituary API is Running</h1><p>Try <a href='/api/obits'>/api/obits</a> or <a href='/calendar.ics'>/calendar.ics</a></p>"
+
+
 @app.route("/api/obits")
 def get_obits():
     try:
